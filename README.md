@@ -3,34 +3,37 @@
 This is a basic starter template for [Wasp](https://wasp-lang.dev/) apps but with a couple of modifications to give you the best experience when using the [WindSurf IDE](https://codeium.com/windsurf) for development. Specifically, a `.windsurfrules` file optimized for Wasp apps, and Wasp example code curated specifically for WindSurf.
 
 ## Getting Started
-1. NVM installed
-2. Node.js installed
+1. Install nvm
    ```bash
-   nvm install node
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+   ```
+3. Install Node.js
+   ```bash
+   nvm install --lts
    ```
 
-3. Make sure you have Wasp installed:
+4. Make sure you have Wasp installed:
    ```bash
    curl -sSL https://get.wasp-lang.dev/installer.sh | sh -s
    ```
-4. [TODO]Create a new repo from this template: [Use the Wasp Cursor Template](https://github.com/wasp-lang/cursor-template/generate)
-5. Clone your new repo:
+5. [TODO]Create a new repo from this template: [Use the Wasp Cursor Template](https://github.com/wasp-lang/cursor-template/generate)
+6. Clone your new repo:
    ```bash
    git clone https://github.com/<your-username>/<your-repo-name>.git
    ```
-6. Position yourself in the project directory:
+7. Position yourself in the project directory:
    ```bash
    cd <your-repo-name>
    ```
-7. Run the following to start the Postgres database.
+8. Run the following to start the Postgres database.
    ```bash
    wasp db start
    ```
-8. In a new terminal, run the following to migrate the database.
+9. In a new terminal, run the following to migrate the database.
     ```bash
     wasp db migrate-dev
     ``` 
-9. Run the following to start the development server.
+10. Run the following to start the development server.
     ```bash
     wasp start
     ``` 
